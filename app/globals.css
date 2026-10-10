@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --lime-plaster: #F4EEE4; --paper: #FBF8F2; --ink: #2B2620; --terracotta: #B8573A; --teak: #7A4E2D; --sage: #6F8A6E;
+  --indigo: #2F4A6D; --brass: #B8913F; --clay: #E7D8C6; --muted: #6B6157; --alert: #A83A2C;
+}
+html { background: var(--lime-plaster); color-scheme: light; }
+body { background: var(--lime-plaster); color: var(--ink); font-family: var(--font-dm-sans), system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+::selection { background: color-mix(in srgb, var(--brass) 35%, transparent); }
+:focus-visible { outline: 2px solid var(--brass); outline-offset: 2px; border-radius: 2px; }
+.num { font-family: var(--font-plex-mono), ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+.annot { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+.display { font-family: var(--font-fraunces), Georgia, serif; font-optical-sizing: auto; }
+
+/* card: soft paper with depth. (The old corner marks are kept in the markup but hidden.) */
+.sheet { position: relative; background: #FFFDF9; border: 1px solid rgba(122,78,45,.14); border-radius: 18px; box-shadow: 0 1px 2px rgba(43,38,32,.05), 0 10px 28px -14px rgba(43,38,32,.18); }
+.sheet > .reg { display: none; }
+.sheet.lift { transition: transform .25s, box-shadow .25s; }
+.sheet.lift:hover { transform: translateY(-2px); box-shadow: 0 2px 4px rgba(43,38,32,.08), 0 18px 40px -16px rgba(43,38,32,.28); }
+
+/* jaali: a fine lattice screen, light through a screen, never behind body text */
+.jaali { background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 28 28'><g fill='none' stroke='%23D9B45B' stroke-width='.8'><path d='M14 2 L26 14 L14 26 L2 14 Z'/><circle cx='14' cy='14' r='4'/><path d='M14 2v4M14 22v4M2 14h4M22 14h4'/></g></svg>"); background-size: 36px 36px; opacity: .13; pointer-events: none; }
+
+/* app canvas */
+body { background: radial-gradient(1200px 500px at 85% -10%, rgba(184,87,58,.10), transparent 60%), radial-gradient(900px 500px at -10% 110%, rgba(47,74,109,.07), transparent 60%), var(--lime-plaster); background-attachment: fixed; }
+
+/* banner header */
+.hero { position: relative; overflow: hidden; background: linear-gradient(120deg, #1C1713 0%, #2E211A 55%, #6B3320 130%); color: #FBF3E4; }
+.hero .glow { position: absolute; right: -80px; top: -120px; width: 360px; height: 360px; border-radius: 9999px; background: radial-gradient(circle, rgba(217,180,91,.38), transparent 68%); pointer-events: none; }
+
+.bleed { width: 100vw; margin-left: calc(50% - 50vw); }
+body { overflow-x: clip; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .45rem; border-radius: 12px; padding: .6rem 1.05rem; font-weight: 600; font-size: .9rem; line-height: 1; border: 1px solid transparent; cursor: pointer; transition: background .2s, transform .15s, box-shadow .2s, border-color .2s; min-height: 40px; }
+.btn:active { transform: translateY(1px); }
+.btn-primary { background: linear-gradient(180deg, #C4623F, #A94A2D); color: #fff; box-shadow: 0 1px 0 rgba(255,255,255,.25) inset, 0 6px 14px -6px rgba(158,69,41,.7); }
+.btn-primary:hover { background: linear-gradient(180deg, #CC6A46, #9E4529); }
+.btn-ghost { background: #fff; color: var(--indigo); border-color: rgba(122,78,45,.2); box-shadow: 0 1px 2px rgba(43,38,32,.05); }
+.btn-ghost:hover { border-color: var(--indigo); box-shadow: 0 4px 12px -6px rgba(47,74,109,.4); }
+.btn-quiet { background: transparent; color: var(--muted); }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.field { width: 100%; background: #fff; border: 1px solid rgba(122,78,45,.2); border-radius: 12px; padding: .55rem .75rem; font: inherit; color: var(--ink); min-height: 42px; transition: border-color .2s, box-shadow .2s; }
+.field:focus { outline: none; border-color: var(--brass); box-shadow: 0 0 0 3px rgba(184,145,63,.25); }
+
+/* number pop for the big figures */
+.figure { font-family: var(--font-fraunces), Georgia, serif; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
