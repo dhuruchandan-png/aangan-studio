@@ -1,0 +1,68 @@
+{
+ "id": "T17",
+ "channel": "phone",
+ "caller_number": "+919000000017",
+ "calls": [
+  {
+   "started_at": "2026-09-22T14:14:00+05:30",
+   "duration_sec": 72,
+   "turns": [
+    {
+     "speaker": "agent",
+     "text": "Good afternoon, Aangan Studio."
+    },
+    {
+     "speaker": "caller",
+     "text": "Hi, I wanted to inquire about — (line drops)"
+    }
+   ],
+   "dropped": true
+  },
+  {
+   "started_at": "2026-09-22T14:16:00+05:30",
+   "duration_sec": 270,
+   "turns": [
+    {
+     "speaker": "agent",
+     "text": "Good afternoon, Aangan Studio."
+    },
+    {
+     "speaker": "caller",
+     "text": "Hi — I called just now and got cut off. I'm Ritu Kapoor from Pimple Saudagar. 3BHK, about 1,050 sq ft. We've been here two years but never properly did the interiors. We want to start now."
+    },
+    {
+     "speaker": "agent",
+     "text": "Thanks for calling back. Pimple Saudagar is in our service area. What are you looking to do?"
+    },
+    {
+     "speaker": "caller",
+     "text": "Kitchen, wardrobes, living room. We moved in with builder furniture and it's very basic."
+    },
+    {
+     "speaker": "agent",
+     "text": "Standard full-home scope. Timeline?"
+    },
+    {
+     "speaker": "caller",
+     "text": "Ideally done by March. Plenty of time."
+    },
+    {
+     "speaker": "agent",
+     "text": "Perfect. Let me book a consultation."
+    }
+   ]
+  }
+ ],
+ "staff_note": null,
+ "history": null,
+ "missed": false,
+ "expect": {
+  "verdicts": [
+   "qualified"
+  ],
+  "merged_calls": 2
+ },
+ "started_at": "2026-09-22T14:14:00+05:30",
+ "label": "Dropped call then call back",
+ "after_hours": false
+}

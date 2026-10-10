@@ -1,0 +1,49 @@
+{
+ "id": "T18",
+ "channel": "phone",
+ "caller_number": "+919000000018",
+ "calls": [
+  {
+   "started_at": "2026-09-23T11:55:00+05:30",
+   "duration_sec": 182,
+   "turns": [
+    {
+     "speaker": "agent",
+     "text": "Good morning, Aangan Studio."
+    },
+    {
+     "speaker": "caller",
+     "text": "Hi — I run a small coworking space. I have a 180 sq ft pod I want to make look really nice. Good lighting, a nice desk, some storage. Can you help?"
+    },
+    {
+     "speaker": "agent",
+     "text": "Our commercial projects are typically 500 sq ft or more. A 180 sq ft pod is below our minimum scope."
+    },
+    {
+     "speaker": "caller",
+     "text": "Not even for a smaller fee?"
+    },
+    {
+     "speaker": "agent",
+     "text": "It's not about the fee — it's that our design and execution team is set up for a certain scale. A 180 sq ft space isn't one we could do well at the quality we'd want to promise. I'd suggest a local designer who specialises in smaller commercial spaces."
+    },
+    {
+     "speaker": "caller",
+     "text": "Fair enough. Thanks."
+    }
+   ]
+  }
+ ],
+ "staff_note": null,
+ "history": null,
+ "missed": false,
+ "expect": {
+  "verdicts": [
+   "not_a_fit",
+   "unsure"
+  ]
+ },
+ "started_at": "2026-09-23T11:55:00+05:30",
+ "label": "180 sq ft coworking pod",
+ "after_hours": false
+}

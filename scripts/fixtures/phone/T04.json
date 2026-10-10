@@ -1,0 +1,44 @@
+{
+ "id": "T04",
+ "channel": "phone",
+ "caller_number": "+919000000004",
+ "calls": [
+  {
+   "started_at": "2026-09-04T11:07:00+05:30",
+   "duration_sec": 202,
+   "turns": [
+    {
+     "speaker": "agent",
+     "text": "Good morning, Aangan Studio."
+    },
+    {
+     "speaker": "caller",
+     "text": "Hi — can someone come and give us some ideas for our living room? We're not planning to do the full thing right now. Just want suggestions on colours, furniture arrangement, what to change."
+    },
+    {
+     "speaker": "agent",
+     "text": "We're a full-service studio — our projects include design and execution together. We don't do advisory or consultation-only visits. If you're planning a full redesign with execution, we'd be a great fit."
+    },
+    {
+     "speaker": "caller",
+     "text": "Oh I see. No, we're just exploring for now. Maybe later."
+    },
+    {
+     "speaker": "agent",
+     "text": "Of course — feel free to call back when you're ready to go ahead with a full project."
+    }
+   ]
+  }
+ ],
+ "staff_note": null,
+ "history": null,
+ "missed": false,
+ "expect": {
+  "verdicts": [
+   "not_a_fit"
+  ]
+ },
+ "started_at": "2026-09-04T11:07:00+05:30",
+ "label": "Ideas only, no execution",
+ "after_hours": false
+}
